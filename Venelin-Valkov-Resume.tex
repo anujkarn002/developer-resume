@@ -1,0 +1,168 @@
+%-------------------------
+% Software developer resume in Latex
+% Author : Venelin Valkov
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{2pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{2pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.curiousily.com/}{\LARGE Venelin Valkov}} & Web Page : \href{https://www.curiousily.com/}{https://curiousily.com}\\
+  \href{mailto:venelin@curiousily.com}{venelin@curiousily.com} & GitHub :  \href{https://github.com/curiousily}{github.com/curiousily}\\
+  Plovdiv, Bulgaria & Medium :  \href{https://medium.com/@curiousily}{medium.com/@curiousily}\\
+\end{tabular*}
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {\href{https://www.mypoli.fun/}{myPoli}}{Plovdiv, Bulgaria}
+      {Co-creator}{Mar 2016 - Present}
+      \resumeItemListStart
+        \resumeItem{Mobile \& Web apps}
+          {Design \& implement Android, iOS and Web app with a team of 4 (ReactJS, React Native, Firebase, JavaScript, Kotlin, Java, NodeJS)}
+        \resumeItem{Task scheduling}
+          {Probabilistic scheduling model for choosing time \& date for a ToDo item (Python, Kotlin)}
+        \resumeItem{NLU}
+          {Model for extracting date, time, duration and recurrence patterns from text (Python, Java)}
+        \resumeItem{Membership System}
+          {Payment verification and checking system that allows membership access on different platforms - Android, iOS and Web (PayPal, Firebase, JavaScript, NodeJS, Koa, Serverless, AWS lambda)}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\href{https://www.skyscanner.net/}{SkyScanner}}{Sofia, Bulgaria}
+      {Machine Learning Engineer}{Sep 2015 - Jan 2016}
+      \resumeItemListStart
+        \resumeItem{ML Framework}
+          {Develop an end-to-end framework for training, testing and deployment of Machine Learning models with a team of 8 developers (Python, NumPy, scikit-learn)}
+        \resumeItem{Data Collection \& Preprocessing}
+          {Extract \& preprocess data from Spark datastores using AWS instances (Python, PySpark queries, Pandas, NumPy, Matplotlib)}
+        \resumeItem{Modeling}
+          {Develop and implement Neural Network \& Random Forest models to predict fare prices (Python, scikit-learn, Pandas, NumPy and Keras)}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {MasConsult}{Plovdiv, Bulgaria}
+      {Java EE/Android Developer}{Summer 2012 and 2013}
+      \resumeItemListStart
+        \resumeItem{Game Development}
+          {Porting of ~20 ObjC games to Java with a team of 4 developers (Cocos2d, AndEngine)}
+        \resumeItem{Domain Register}
+          {Backend development of domain registration service using TDD \& Scrum with a team of 4 developers. (Java EE, JUnit, Tomcat)}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\href{https://www.viscomp.bg/}{Viscomp}}{Plovdiv, Bulgaria}
+      {Junior PHP Developer}{Jan 2012 - Dec 2013}
+      \resumeItemListStart
+        \resumeItem{Web Crawler Tool}
+          {Design and development of Web crawling tool (extracting personal and business contact/details information) with a team of 3 developers (PHP, Apache, Zend Framework)}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\href{https://leanpub.com/deep-learning-for-javascript-hackers}{(Book) Deep Learning for JavaScript Hackers}}
+      {Build Machine Learning models in JavaScript with TensorFlow}
+    \resumeSubItem{\href{https://leanpub.com/hmls}{(Book) Hands-On Machine Learning from Scratch}}
+      {Implement Machine Learning models from scratch in Python}
+    \resumeSubItem{\href{http://www.retroselfie.xyz/}{RetroSelfie}}
+      {Co-creator of photo editing app with 50,000,000+ downloads worldwide (Java, Kotlin)}
+    \resumeSubItem{\href{https://virtus.fit/}{Virtus}}
+      {Strength training coach powered by AI (React Native, ReactJS, TensorFlow.js, Firebase)}
+    \resumeSubItem{\href{https://myjourney.today/}{My Journey}}
+      {Journaling app that analyzes what makes you happy (React Native, WatermelonDB, Victory Native)}
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {PhD student (Mathematical Modeling)}{Plovdiv, Bulgaria}
+      {Plovdiv University}{Mar. 2016 -- }
+    \resumeSubheading
+      {Master of Science in Computer Science}{Plovdiv, Bulgaria}
+      {Plovdiv University}{Oct. 2012 -- Jul. 2013}
+    \resumeSubheading
+      {Bachelor of Science in Computer Science}{Plovdiv, Bulgaria}
+      {Plovdiv University}{Oct. 2009 -- Jul. 2012}
+  \resumeSubHeadingListEnd
+
+%-----------INTERESTS-----------------
+\section{Interests}
+  {Powerlifting, Mountain Biking, Hiking, Behavioural economics, Personal Productivity, Entrepreneurship, \href{https://uhunt.onlinejudge.org/id/64244}{Competitive Programming}, The Office (TV Series), Neuroscience}
+
+%-------------------------------------------
+\end{document}
