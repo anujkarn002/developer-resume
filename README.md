@@ -4,6 +4,8 @@
 
 Heavily based on [the template](https://github.com/sb2nov/resume) of [Sourabh Bajaj](https://sourabhbajaj.com/)
 
+![](assets/cv-preview.png)
+
 # License
 
 MIT
