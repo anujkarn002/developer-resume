@@ -1,6 +1,8 @@
 # Software Developer Resume
 
-Software developer resume template in LaTex. Heavily based on [the template](https://github.com/sb2nov/resume) of [Sourabh Bajaj](https://sourabhbajaj.com/)
+1-page software developer resume template in LaTex. Simple & clean.
+
+Heavily based on [the template](https://github.com/sb2nov/resume) of [Sourabh Bajaj](https://sourabhbajaj.com/)
 
 # License
 
