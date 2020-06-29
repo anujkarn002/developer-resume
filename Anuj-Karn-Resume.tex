@@ -1,0 +1,123 @@
+%-------------------------
+% Software developer resume in Latex
+% Author : Anuj Karn
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{2pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{2pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{c @{\extracolsep{\fill}}c c}                                            %That's what she said%
+  \href{mailto:hello@anujkarn.com.np}{hello@anujkarn.com.np} & \textbf{\href{https://anujkarn.com.np/}{\huge Anuj Karn}} & GitHub: \href{https://github.com/anujkarn002}{github.com/anujkarn002}\\
+  Kathmandu, Nepal & \href{https://anujkarn.com.np/}{anujkarn.com.np} & Linked In: \href{https://linkedin.com/in/anujkarn002}{linkedin.com/in/anujkarn002}\\
+\end{tabular*}
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {\href{http://sunya.health}{Sunya Health}}{Lalitpur, Nepal}
+      {Software Developer}{Dec 2019 - present}
+      \resumeItemListStart
+        \resumeItem{Mobile \& Web apps}
+          {Design \& implement Android, and Web app with a team of 3 (ReactJS, JavaScript, Java, Django, OpenCV)}
+        \resumeItem{Code Conversion}
+          {Convert OpenCV algorithm from python to java (Python, Java, OpenCV)}
+        \resumeItem{Algorithm Tweaking}
+          {Made changes in algorithm to increase accuracy (Python, Java, OpenCV)}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\href{http://github.com/anujkarn002/adminpanel}{Admin Panel}}
+      {Admin Panel for e-commerce using php from scratch (PHP, MySQL)}
+    \resumeSubItem{\href{https://github.com/anujkarn002/designyourway}{Design Your Way}}
+      {A template for sapper app using tailwind css deployable to firebase.}
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {GED}{Kathmandu, Nepal}
+      {US High School Equivalent}{Oct. 2019 }
+  \resumeSubHeadingListEnd
+
+%-----------INTERESTS-----------------
+\section{Interests}
+  {Sketching, Robotics, Personal Productivity, Entrepreneurship, Artificial Intelligence, Iron Man (Movies)}
+
+%-------------------------------------------
+\end{document}
